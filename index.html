@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    const movies = [
+        { name: "Serenity", rating: 7.9, price: 120, genre: ["scifi"], home: false, minAge: 15 },
+        { name: "Terminator 2", rating: 8.5, price: 140, genre: ["scifi"], home: true, minAge: 18 },
+        { name: "The room", rating: 3.6, price: 15, genre: ["drama"], home: true, minAge: 35 },
+        { name: "Ghost dog", rating: 7.5, price: 95, genre: ["action","drama"], home: false, minAge: 13 },
+        { name: "Inception", rating: 8.8, price: 220, genre: ["action","scifi"], home: true, minAge: 15 }
+    ];
+
+
+    const prices = [];
+
+    var arrayLength = movies.length;
+    for (var i = 0; i < arrayLength; i++) {
+        console.log("Prices", movies[i].price);
+        //Do something
+    }
+
+
+
+    const movieNames = [];
+
+    var arrayLength = movies.length;
+    for (var i = 0; i < arrayLength; i++) {
+        console.log("Movies", movies[i].name);
+        //Do something
+    }
+
+
+
+    const availableMovies = [];
+
+    var arrayLength = movies.length;
+    for (var i = 0; i < arrayLength; i++) {
+        if (movies[i].home === true) {
+            console.log("Home", movies[i].name);
+        }
+    }
+
+
+
+    const pg15 = [];
+
+    var arrayLength = movies.length;
+    for (var i = 0; i < arrayLength; i++) {
+        if (movies[i].minAge <= 15) {
+            console.log("PG15", movies[i].name);
+        }
+    }
+
+
+
+    const goodMovies = [];
+
+    var arrayLength = movies.length;
+    for (var i = 0; i < arrayLength; i++) {
+        if (movies[i].home === true) {
+            console.log("Home", movies[i].name);
+        }
+    }
+
+
+
+    const totalPrice = 0;
+
+    const scifiMovies = [];
+
+    const averageRating = 0;
+
+    const averageSciFiRating = 0;
+
+    const genres = [];
+
+</script>
+</body>
+</html>

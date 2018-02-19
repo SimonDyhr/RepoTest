@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    const movies = [
+        { name: "Serenity", rating: 7.9, price: 120, genre: ["scifi"], home: false, minAge: 15 },
+        { name: "Terminator 2", rating: 8.5, price: 140, genre: ["scifi"], home: true, minAge: 18 },
+        { name: "The room", rating: 3.6, price: 15, genre: ["drama"], home: true, minAge: 35 },
+        { name: "Ghost dog", rating: 7.5, price: 95, genre: ["action","drama"], home: false, minAge: 13 },
+        { name: "Inception", rating: 8.8, price: 220, genre: ["action","scifi"], home: true, minAge: 15 }
+    ];
+
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+
+    const prices = movies.map(function (movies) { return movies.price; });
+    console.log("Prices:", prices);
+
+    const movieNames = movies.map(function (movies) { return movies.name; });
+    console.log("Moive names:", movieNames);
+
+    const availableMovies = movies.filter(function (movies) { return movies.home === true; });
+    console.log("Avaliable:", availableMovies);
+
+    const pg15 = movies.filter(function (movies) { return movies.minAge <= 15; });
+    console.log("PG15:", pg15);
+
+    const goodMovies = movies.filter(function (movies) { return movies.rating > 8; });
+    console.log("Good movies:", goodMovies);
+
+    const totalPrice = console.log(movies.price.reduce(reducer));
+
+    const scifiMovies = [];
+
+    const averageRating = 0;
+
+    const averageSciFiRating = 0;
+
+    const genres = [];
+
+</script>
+</body>
+</html>
